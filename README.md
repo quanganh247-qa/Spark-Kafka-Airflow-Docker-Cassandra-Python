@@ -93,12 +93,15 @@ Next, we need to install the required JAR files inside the jars directory by gai
 We should run the following commands to install the necessary JAR files under for Spark version 3.3.0:
 
 ```cd jars```
+
 ```curl -O https://repo1.maven.org/maven2/com/datastax/spark/spark-cassandra-connector_2.12/3.3.0/spark-cassandra-connector_2.12-3.3.0.jar```
+
 ```curl -O https://repo1.maven.org/maven2/org/apache/spark/spark-sql-kafka-0-10_2.13/3.3.0/spark-sql-kafka-0-10_2.13-3.3.0.jar```
 
 While the API data is sent to the Kafka topic random_names regularly, we can submit the PySpark application and write the topic data to Cassandra table
 
 ```cd ..```
+
 ```spark-submit --master local[2] --jars /opt/bitnami/spark/jars/spark-sql-kafka-0-10_2.13-3.3.0.jar,/opt/bitnami/spark/jars/spark-cassandra-connector_2.12-3.3.0.jar spark_streaming.py```
 
 
