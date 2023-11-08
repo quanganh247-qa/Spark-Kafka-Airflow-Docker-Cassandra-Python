@@ -35,8 +35,10 @@ The project is designed with the following components:
 ## Apache Airflow
 
 Run the following command to clone the necessary repo on your local
-```a```
-Then change the docker-compose-test.yml file with the one in this repo and add requirements.txt file in the folder. This will bind the Airflow container with Kafka and Spark container and necessary modules will automatically be installed:
+
+``` git clone https://github.com/quanganh247-qa/Spark-Kafka-Airflow-Docker-Cassandra-Python.git ```
+
+Then change the docker-compose-test.yml file with the one in this repo and add  ``` requirements.txt ``` file in the folder . This will bind the Airflow container with Kafka and Spark container and necessary modules will automatically be installed:
 
 ```docker-compose -f docker-compose-test.yml up -d```
 
